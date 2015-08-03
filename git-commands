@@ -1,0 +1,7 @@
+// get hash that was on top of master branch one day ago
+// source: http://git-scm.com/docs/git-reflog
+git-reflog master@{one.day.ago}
+
+// reset one file to a specific commit
+// source: http://stackoverflow.com/a/215731
+git checkout abcde file/to/restore
