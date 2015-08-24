@@ -1,0 +1,9 @@
+// source: http://stackoverflow.com/a/16956844
+// searches string recursively (R) in current directory (.), printing file names instead of results (l)
+grep -Rl "extr" .
+
+// ignores case (i). supposedely slows performance significantly
+grep -Rli "extr" .
+
+// use fgrep if no regular expression is needed
+fgrep -Rl "findme" .
