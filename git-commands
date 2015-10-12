@@ -5,3 +5,7 @@ git-reflog master@{one.day.ago}
 // reset one file to a specific commit
 // source: http://stackoverflow.com/a/215731
 git checkout abcde file/to/restore
+
+// prints commit count per user across all branches
+// source: http://stackoverflow.com/a/9839491
+git shortlog -s -n -e --all 
