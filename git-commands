@@ -9,3 +9,10 @@ git checkout abcde file/to/restore
 // prints commit count per user across all branches
 // source: http://stackoverflow.com/a/9839491
 git shortlog -s -n -e --all 
+
+
+// find file by name in this and all subdirectories
+find . -type f -name "*.grin"
+
+// sort by most recently modified - source: http://stackoverflow.com/a/8513679
+find . -type f  -name '*.grin' -printf '%TY-%Tm-%Td %TT %p\n' | sort
